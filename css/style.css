@@ -1,0 +1,150 @@
+/*Fonts*/
+@font-face {
+  font-family: "Aktiv-Grostek";
+  src: url("../fonts/aktiv_grotesk-webfont.woff") format("woff"), url("../fonts/aktiv_grotesk-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aktiv-Grostek";
+  src: url("../fonts/aktiv_grotesk_italic-webfont.woff") format("woff"), url("../fonts/aktiv_grotesk_italic-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Aktiv-Grostek";
+  src: url("../fonts/aktiv_grotesk_bold-webfont.woff") format("woff"), url("../fonts/aktiv_grotesk_bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Publico Headline";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/PublicoHeadline-Medium.woff") format("woff"), url("../fonts/PublicoHeadline-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Publico Headline";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/PublicoHeadline-BoldItalic.woff") format("woff"), url("../fonts/PublicoHeadline-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Publico Headline";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/PublicoHeadline-Light.woff2") format("woff2"), url("../fonts/PublicoHeadline-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Publico Headline";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/PublicoHeadline-LightItalic.woff2") format("woff2"), url("../fonts/PublicoHeadline-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Publico Headline";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PublicoHeadline-Bold.woff2") format("woff2"), url("../fonts/PublicoHeadline-Bold.woff") format("woff");
+}
+/*Basic components/fonts/button  styling*/
+body {
+  color: #ffffff;
+}
+
+p, ul, li, a, span, table, label, .para-font {
+  font-family: "Aktiv-Grostek", arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .header-font {
+  font-family: "Publico Headline", sans-serif;
+}
+
+h1, .h1 {
+  font-size: 2.9rem;
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+}
+
+.h3, h3 {
+  font-size: 2rem;
+}
+
+.h4, h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1.15rem;
+}
+
+.footnote-fontsize {
+  font-size: 0.075rem;
+}
+
+.major-headline {
+  font-size: 4.5rem;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.lightgreen-text {
+  color: #a0dab3;
+}
+
+.peach-text {
+  color: #ffb990;
+}
+
+.btn {
+  color: #000000;
+}
+
+.orange-btn {
+  background-color: #ffb990;
+  border-color: #ffb990;
+}
+.orange-btn:hover {
+  background-color: #ff7e33;
+  transition: all 0.3s ease-in;
+  border-color: #ff7e33;
+}
+
+.green-btn {
+  background-color: #a0dab3;
+  border-color: #a0dab3;
+}
+.green-btn:hover {
+  background-color: #5dc07e;
+  border-color: #5dc07e;
+  transition: all 0.3s ease-in;
+}
+
+.lightgreen-background {
+  background-color: #a0dab3;
+}
+
+/*Header styling*/
+.navy-background {
+  background-color: #202A44;
+}
+
+/*2nd div participate section*/
+.participate-section {
+  background-color: grey;
+  background-image: linear-gradient(0deg, rgba(32, 42, 68, 0.6), rgba(32, 42, 68, 0.6)), url("../images/contest-promo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
