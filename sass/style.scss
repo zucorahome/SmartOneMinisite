@@ -169,6 +169,23 @@ h6, .h6{
     background-color: $lightgreen;
 }
 
+.lightblue-background{
+    background-color: $lightblue;
+}
+
+//Custom width class
+
+@media screen and (max-width:767px){
+    .w-md-50{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .w-md-50{
+        width:50%;
+    }
+}
 
 /*Header styling*/
 .navy-background{
@@ -184,4 +201,10 @@ h6, .h6{
     background-size: cover;
     background-position: center right;
     width: 100%;
+}
+
+/*3rd Section*/
+
+.accordion-button:not(.collapsed){
+    background-color:none;
 }

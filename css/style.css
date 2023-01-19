@@ -132,6 +132,20 @@ h6, .h6 {
   background-color: #a0dab3;
 }
 
+.lightblue-background {
+  background-color: #9FAee5;
+}
+
+@media screen and (max-width: 767px) {
+  .w-md-50 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
 /*Header styling*/
 .navy-background {
   background-color: #202A44;
@@ -145,6 +159,11 @@ h6, .h6 {
   background-size: cover;
   background-position: center right;
   width: 100%;
+}
+
+/*3rd Section*/
+.accordion-button:not(.collapsed) {
+  background-color: none;
 }
 
 /*# sourceMappingURL=style.css.map */
