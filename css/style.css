@@ -52,35 +52,54 @@ body {
   color: #ffffff;
 }
 
-p, ul, li, a, span, table, label, .para-font {
+p,
+ul,
+li,
+a,
+span,
+table,
+label,
+.para-font {
   font-family: "Aktiv-Grostek", arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .header-font {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-font {
   font-family: "Publico Headline", sans-serif;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.9rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 2.5rem;
 }
 
-.h3, h3 {
+.h3,
+h3 {
   font-size: 2rem;
 }
 
-.h4, h4 {
+.h4,
+h4 {
   font-size: 1.5rem;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1.15rem;
 }
 
@@ -102,6 +121,10 @@ h6, .h6 {
 
 .peach-text {
   color: #ffb990;
+}
+
+.black-text {
+  color: #000000;
 }
 
 .btn {
@@ -128,6 +151,10 @@ h6, .h6 {
   transition: all 0.3s ease-in;
 }
 
+.navy-background {
+  background-color: #202A44;
+}
+
 .lightgreen-background {
   background-color: #a0dab3;
 }
@@ -146,11 +173,11 @@ h6, .h6 {
     width: 50%;
   }
 }
-/*Header styling*/
-.navy-background {
-  background-color: #202A44;
+.green-border {
+  border: #5dc07e solid 2px;
 }
 
+/*Header styling*/
 /*2nd div participate section*/
 .participate-section {
   background-color: grey;
@@ -162,8 +189,5 @@ h6, .h6 {
 }
 
 /*3rd Section*/
-.accordion-button:not(.collapsed) {
-  background-color: none;
-}
 
 /*# sourceMappingURL=style.css.map */

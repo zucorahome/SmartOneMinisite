@@ -1,15 +1,15 @@
 //Variables
 //Color variables
 $navyblue: #202A44;
-$indigo:#485cc7;
-$lightblue:#9FAee5;
-$lightgreen:#a0dab3;
-$darkblue:#5f78d3;
-$darkgreen:#5dc07e;
-$peach:#ffb990;
-$orange:#ff7e33;
-$white:#ffffff;
-$black:#000000;
+$indigo: #485cc7;
+$lightblue: #9FAee5;
+$lightgreen: #a0dab3;
+$darkblue: #5f78d3;
+$darkgreen: #5dc07e;
+$peach: #ffb990;
+$orange: #ff7e33;
+$white: #ffffff;
+$black: #000000;
 
 $para-fonts: "Aktiv-Grostek", arial, sans-serif;
 $heading-fonts: "Publico Headline", sans-serif;
@@ -74,89 +74,113 @@ $heading-fonts: "Publico Headline", sans-serif;
 
 /*Basic components/fonts/button  styling*/
 
-body{
-    color:$white;
+body {
+    color: $white;
 }
 
 //Fonts & Font size
 
-p,ul,li,a,span, table, label, .para-font{
+p,
+ul,
+li,
+a,
+span,
+table,
+label,
+.para-font {
     font-family: $para-fonts;
 }
 
-h1,h2,h3,h4,h5,h6, .header-font{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-font {
     font-family: $heading-fonts;
 }
 
-h1, .h1{
-   // font-size: 3.9vw; //75px in figma design
-   font-size:2.9rem; //font guideline from zucoradev site
+h1,
+.h1 {
+    // font-size: 3.9vw; //75px in figma design
+    font-size: 2.9rem; //font guideline from zucoradev site
 }
 
-h2, .h2{
-    font-size:2.5rem; //zucoradev
+h2,
+.h2 {
+    font-size: 2.5rem; //zucoradev
 }
 
-.h3, h3{
+.h3,
+h3 {
     font-size: 2rem;
 }
 
-.h4, h4{
+.h4,
+h4 {
     font-size: 1.5rem;
 }
 
-h5, .h5{
-    font-size:1.25rem;
+h5,
+.h5 {
+    font-size: 1.25rem;
 }
 
-h6, .h6{
+h6,
+.h6 {
     font-size: 1.15rem;
 }
 
-.footnote-fontsize{
-    font-size:0.075rem; // 14px
+.footnote-fontsize {
+    font-size: 0.075rem; // 14px
 }
 
-.major-headline{
+.major-headline {
     //font-size:6.25vw; //120px in figma design
-    font-size:4.5rem; //from zucoradev
+    font-size: 4.5rem; //from zucoradev
 }
 
 //Text color
 
-.white-text{
-    color:$white;
+.white-text {
+    color: $white;
 }
 
-.lightgreen-text{
-    color:$lightgreen;
+.lightgreen-text {
+    color: $lightgreen;
 }
 
-.peach-text{
-    color:$peach;
+.peach-text {
+    color: $peach;
+}
+
+.black-text{
+    color:$black;
 }
 
 //Buttons custom classes
 
-.btn{
-    color:$black;
+.btn {
+    color: $black;
 }
 
-.orange-btn{
+.orange-btn {
     background-color: $peach;
     border-color: $peach;
 
-    &:hover{
+    &:hover {
         background-color: $orange;
         transition: all 0.3s ease-in;
         border-color: $orange;
     }
 }
 
-.green-btn{
+.green-btn {
     background-color: $lightgreen;
     border-color: $lightgreen;
-    &:hover{
+
+    &:hover {
         background-color: $darkgreen;
         border-color: $darkgreen;
         transition: all 0.3s ease-in;
@@ -165,38 +189,45 @@ h6, .h6{
 
 //Backgrounds
 
-.lightgreen-background{
+.navy-background {
+    background-color: $navyblue;
+}
+
+.lightgreen-background {
     background-color: $lightgreen;
 }
 
-.lightblue-background{
+.lightblue-background {
     background-color: $lightblue;
 }
 
 //Custom width class
 
-@media screen and (max-width:767px){
-    .w-md-50{
-        width:100%;
+@media screen and (max-width:767px) {
+    .w-md-50 {
+        width: 100%;
     }
 }
 
-@media screen and (min-width:768px){
-    .w-md-50{
-        width:50%;
+@media screen and (min-width:768px) {
+    .w-md-50 {
+        width: 50%;
     }
+}
+
+//Borders
+
+.green-border{
+    border: $darkgreen solid 2px;
 }
 
 /*Header styling*/
-.navy-background{
-    background-color: $navyblue;
-}
 
 /*2nd div participate section*/
 
-.participate-section{
+.participate-section {
     background-color: grey;
-    background-image: linear-gradient(0deg,rgba(32,42,68,0.6),rgba(32,42,68,0.6)),url('../images/contest-promo.png');
+    background-image: linear-gradient(0deg, rgba(32, 42, 68, 0.6), rgba(32, 42, 68, 0.6)), url('../images/contest-promo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
@@ -204,7 +235,3 @@ h6, .h6{
 }
 
 /*3rd Section*/
-
-.accordion-button:not(.collapsed){
-    background-color:none;
-}
