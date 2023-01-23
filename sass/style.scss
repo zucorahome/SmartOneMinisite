@@ -203,15 +203,16 @@ h6,
 
 //Custom width class
 
-@media screen and (max-width:767px) {
-    .w-md-50 {
-        width: 100%;
+
+@media screen and (max-width:768px){
+    .w-md-50{
+        width:100%;
     }
 }
 
-@media screen and (min-width:768px) {
-    .w-md-50 {
-        width: 50%;
+@media screen and (min-width:769px){
+    .w-md-50{
+        width:50%;
     }
 }
 

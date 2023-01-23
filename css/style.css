@@ -163,12 +163,12 @@ h6,
   background-color: #9FAee5;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .w-md-50 {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .w-md-50 {
     width: 50%;
   }
