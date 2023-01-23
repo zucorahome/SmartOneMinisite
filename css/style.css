@@ -127,6 +127,10 @@ h6,
   color: #000000;
 }
 
+.navy-text {
+  color: #202A44;
+}
+
 .btn {
   color: #000000;
 }
@@ -177,6 +181,17 @@ h6,
   border: #5dc07e solid 2px;
 }
 
+.lightblue-border {
+  border: #9FAee5 dashed 3px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: block;
+  text-align: center;
+  padding: 7px 10px 10px 10px;
+  line-height: 1;
+}
+
 /*Header styling*/
 /*2nd div participate section*/
 .participate-section {
@@ -188,6 +203,6 @@ h6,
   width: 100%;
 }
 
-/*3rd Section*/
+/*4th Section*/
 
 /*# sourceMappingURL=style.css.map */
