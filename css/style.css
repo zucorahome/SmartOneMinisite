@@ -174,9 +174,12 @@ h6,
 .navy-round-background {
   background-color: #202A44;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
+  width: 120px;
+  height: 120px;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -189,6 +192,10 @@ h6,
     width: 50%;
   }
 }
+.w-60 {
+  width: 60%;
+}
+
 .green-border {
   border: #5dc07e solid 2px;
 }
@@ -215,6 +222,11 @@ h6,
   width: 100%;
 }
 
-/*4th Section*/
+/*6th Section*/
+#activate-now-button {
+  position: absolute;
+  right: 10%;
+  padding: 40px 0px 0px 0px;
+}
 
 /*# sourceMappingURL=style.css.map */
