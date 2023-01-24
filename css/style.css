@@ -167,6 +167,18 @@ h6,
   background-color: #9FAee5;
 }
 
+.peach-background {
+  background-color: #ffb990;
+}
+
+.navy-round-background {
+  background-color: #202A44;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .w-md-50 {
     width: 100%;
