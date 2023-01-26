@@ -182,6 +182,15 @@ h6,
   margin-bottom: 0;
 }
 
+.newsletter-blue-background {
+  background-image: url("../images/blue-background.png");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .w-md-50 {
     width: 100%;
