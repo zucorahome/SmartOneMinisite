@@ -131,6 +131,10 @@ h6,
   color: #202A44;
 }
 
+.lightblue-text {
+  color: #9FAee5;
+}
+
 .btn {
   color: #000000;
 }
@@ -195,10 +199,16 @@ h6,
   .w-md-50 {
     width: 100%;
   }
+  .footer-border {
+    border-bottom: 1px solid white;
+  }
 }
 @media screen and (min-width: 769px) {
   .w-md-50 {
     width: 50%;
+  }
+  .footer-border {
+    border-right: 1px solid white;
   }
 }
 .w-60 {
@@ -229,6 +239,16 @@ h6,
   background-size: cover;
   background-position: center right;
   width: 100%;
+}
+
+/**/
+.furniture-image-background {
+  background-image: url("../images/smartOne-FURN.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+  height: 500px;
 }
 
 /*6th Section*/
