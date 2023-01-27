@@ -295,14 +295,66 @@ h6,
 
 /**/
 
-.furniture-image-background{
-    background-image: url('../images/smartOne-FURN.png');
+.furniture-main-image{
+    position: relative;
+    z-index: -1;
+}
+
+.smartOne-Furn-logo{
+    position: relative;
+    z-index: 10;   
+}
+
+/*.navy-background#angle-background{
+    content: "";
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  background: $navyblue;
+  transform: skew(-30deg);
+  transform-origin:top;
+} */
+
+//.navy-background#angle-background{
+
+        //background: linear-gradient(135deg, white 50%, #202A44 50%);
+
+      
+//}
+
+#angle-background{
+    height: 10vh;
+    margin:0;
+    background: $navyblue;
+    display: flex;
+    z-index: -15;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 39%;
+        bottom: -38.75%;
+        left: 0;
+        width: 100%;
+        background: white;
+        transform: skew(-30deg);
+        transform-origin:top;
+    }
+}
+
+.navy-angle-background{
+    background-image: url('../images/navy-angled-background.png');
+    background-position: center right;
     background-size: contain;
     background-repeat: no-repeat;
     width:100%;
-    z-index: -1;
-    height:500px;
+    max-width:100%;
+    min-height: 120px;
+    height: auto;
 }
+
 
 /*6th Section*/
 
