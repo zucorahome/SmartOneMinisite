@@ -133,7 +133,7 @@ h6,
 }
 
 .footnote-fontsize {
-    font-size: 0.075rem; // 14px
+    font-size: 0.5rem; // 14px
 }
 
 .major-headline {
@@ -267,6 +267,10 @@ h6,
 }
 
 .lightblue-border{
+    border:$lightblue solid 2px;
+}
+
+.lightblue-round-border{
     border:$lightblue dashed 3px;
     border-radius: 50%;
     width: 70px;
