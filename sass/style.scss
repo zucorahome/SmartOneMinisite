@@ -133,7 +133,7 @@ h6,
 }
 
 .footnote-fontsize {
-    font-size: 0.5rem; // 14px
+    font-size: 0.35rem;
 }
 
 .major-headline {
@@ -175,6 +175,7 @@ h6,
 
 .btn {
     color: $black;
+    border-radius: 0%;
 }
 
 .orange-btn {
@@ -309,11 +310,15 @@ h6,
     z-index: -1;
 }
 
-.smartOne-Furn-logo{
+.smartOne-Furn-logo, .smartOne-App-logo{
     position: relative;
-    z-index: 10;   
+    z-index: 10;
+    width:75%;   
 }
 
+.smartOne-Furn-logo{
+    right:-25%;
+}
 
 
 /*.navy-background#angle-background{
@@ -373,4 +378,22 @@ h6,
     position: absolute;
     right:10%;
     padding: 40px 0px 0px 0px;
+}
+
+/*Accordion FAQ style*/
+
+#FAQAccordion{
+
+    .accordion-item{
+       
+    }
+
+    .accordion-header{
+        background-color:#f5f5f5;
+    }
+
+    .accordion-button{
+        background-color: #f5f5f5;
+    }
+
 }
