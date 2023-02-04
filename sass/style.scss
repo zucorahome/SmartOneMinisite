@@ -238,6 +238,12 @@ h6,
     height: auto;
 }
 
+//Custom Form style
+
+.form-control{
+    border-radius: 0%;
+}
+
 //Custom width class
 
 
@@ -384,8 +390,11 @@ h6,
 
 #FAQAccordion{
 
+    .accordion{
+        
+    }
     .accordion-item{
-       
+        border-bottom: 0px;
     }
 
     .accordion-header{
@@ -394,6 +403,12 @@ h6,
 
     .accordion-button{
         background-color: #f5f5f5;
+    }
+
+    .accordion-button:not(.collapsed), .accordion-button:focus{
+        color:$orange;
+        //border-color: $lightgreen;
+        box-shadow: none;
     }
 
 }

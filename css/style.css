@@ -200,6 +200,10 @@ h6,
   height: auto;
 }
 
+.form-control {
+  border-radius: 0%;
+}
+
 @media screen and (max-width: 768px) {
   .w-md-50 {
     width: 100%;
@@ -315,11 +319,18 @@ h6,
 }
 
 /*Accordion FAQ style*/
+#FAQAccordion .accordion-item {
+  border-bottom: 0px;
+}
 #FAQAccordion .accordion-header {
   background-color: #f5f5f5;
 }
 #FAQAccordion .accordion-button {
   background-color: #f5f5f5;
+}
+#FAQAccordion .accordion-button:not(.collapsed), #FAQAccordion .accordion-button:focus {
+  color: #ff7e33;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */
