@@ -270,6 +270,27 @@ h6,
   right: -25%;
 }
 
+#SmartOne-furniture-section, #SmartOne-appliance-section {
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*.navy-background#angle-background{
     content: "";
   position: relative;
@@ -311,6 +332,7 @@ h6,
   height: auto;
 }
 
+/*Section styling*/
 /*6th Section*/
 #activate-now-button {
   position: absolute;
