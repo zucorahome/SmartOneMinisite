@@ -214,6 +214,11 @@ h6,
     background-color: $lightblue;
 }
 
+.lightblue-angled-background{
+    background-color: $lightblue;
+    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+}
+
 .peach-background{
     background-color: $peach;
 }
@@ -227,6 +232,21 @@ h6,
     text-align: center;
     font-weight: 700;
     margin-bottom:0;
+}
+
+.navy-angled-background{
+    background-color: $navyblue;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+ }
+ 
+ .navy-rightAngled-background{
+    background-color: $navyblue;
+    clip-path: polygon(0 0,88% 0, 100% 100%, 0 100%);
+ }
+
+.lightgreen-angled-background{
+    background-color: $lightgreen;
+    clip-path:polygon(0 0,95% 0, 100% 100%, 0 100%);
 }
 
 .newsletter-blue-background{
@@ -267,9 +287,6 @@ h6,
     }
 }
 
-.w-60{
-    width:60%;
-}
 
 //Borders
 
@@ -311,6 +328,35 @@ h6,
 
 /**/
 
+.smartOne-furn-background{
+    background-image:url('../images/smartOne-FURN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height:600px;
+}
+
+
+.smartOne-app-background{
+    background-image: url('../images/smartOne-APP.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height:600px;
+}
+
+@media screen and (max-width:800px){
+    .smartOne-furn-background{
+        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/smartOne-FURN.png');
+        height: 400px;
+    }
+
+    .smartOne-app-background{
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/smartOne-APP.png');
+        height: 400px;
+    }
+}
+
 .furniture-main-image{
     position: relative;
     z-index: -1;
@@ -343,57 +389,6 @@ h6,
 }
 
 
-
-/*.navy-background#angle-background{
-    content: "";
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: auto;
-  background: $navyblue;
-  transform: skew(-30deg);
-  transform-origin:top;
-} */
-
-//.navy-background#angle-background{
-
-        //background: linear-gradient(135deg, white 50%, #202A44 50%);
-
-      
-//}
-
-#angle-background{
-    height: 10vh;
-    margin:0;
-    background: $navyblue;
-    display: flex;
-    z-index: -15;
-
-    &::before{
-        content: "";
-        position: absolute;
-        top: 39%;
-        bottom: -38.75%;
-        left: 0;
-        width: 100%;
-        background: white;
-        transform: skew(-30deg);
-        transform-origin:top;
-    }
-}
-
-.navy-angle-background{
-    background-image: url('../images/navy-angled-background.png');
-    background-position: center right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:100%;
-    max-width:100%;
-    min-height: 120px;
-    height: auto;
-}
-
 /*Section styling*/
 
 /*6th Section*/
@@ -402,7 +397,13 @@ h6,
     position: absolute;
     right:10%;
     padding: 40px 0px 0px 0px;
+    transition: scale 0.6s ease-in-out;
+
+    &:hover{
+        scale: 1.15;
+    }
 }
+
 
 /*Accordion FAQ style*/
 
@@ -429,4 +430,15 @@ h6,
         box-shadow: none;
     }
 
+}
+
+.fa-brands{
+    transition: scale 0.5s ease-in-out;
+    -webkit-transition: scale 0.5s ease-in-out;
+    &:hover{
+        background-color: white;
+        color:$navyblue;
+        scale:1.15;
+        padding: 5px;
+    }
 }

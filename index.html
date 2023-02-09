@@ -24,7 +24,7 @@
             </div>
             <div class="col-12 d-flex justify-content-center justify-content-md-start">
                 <div class="m-2">
-                    <h1 class="white-text para-font fw-bold">Happy with your new <span class="lightgreen-text major-headline text-uppercase">oven?</span><br/>Protect it with a SmartOne Plan!</h1>
+                    <h1 class="white-text para-font fw-bold">Happy with your new <span class="lightgreen-text major-headline text-uppercase" id="changeWord">oven?</span><br/>Protect it with a SmartOne Plan!</h1>
                 </div>
             </div>
         </nav>
@@ -64,18 +64,18 @@
         <div class="row d-flex flex-column">
             <!--hero section-->
             <div class="col-sm-12 g-0 mb-4">
-              <div class="row align-items-center g-0">
-                <div class="col-12 col-md-7">
+              <div class="row align-items-center g-0 smartOne-furn-background">
+                <!--<div class="col-12 col-md-7">
                   <img src="./images/smartOne-FURN.png" class="img-fluid furniture-main-image"/>
-                </div>
-                <div class="col-12 col-md-5 d-flex justify-content-end flex-column">
+                </div>-->
+                <div class="col-12 col-md-6 offset-md-6">
                   <img src="./images/SmartOnePlan_Furniture_Logo_colour.png" class="img-fluid smartOne-Furn-logo mb-2" />
                   <!--id="angle-background"-->
-                  <div class="navy-background p-3 d-flex justify-content-end align-items-center">
-                      <h5 class="para-font white-text text-uppercase fw-semibold text-end d-flex justify-content-end align-items-center mb-0">Five year Accidental stain and damage protection</h5>
+                  <div class="navy-angled-background p-4 d-flex justify-content-end align-items-center">
+                      <h5 class="para-font white-text text-uppercase fw-semibold text-end d-flex justify-content-end align-items-center mb-0 mt-2">Five year Accidental stain and damage protection</h5>
                   </div>
                   <!---->
-                  <div class="lightblue-background">
+                  <div class="lightblue-angled-background">
                         <div class="d-flex justify-content-evenly align-items-center">
                             <p class="black-text text-uppercase mb-0 mt-1 fw-semibold">Furniture</p>
                             <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize"></i>
@@ -98,41 +98,47 @@
             <!--info section-->
             <div class="col-sm-12 my-4">
                 <h4 class="text-center text-uppercase black-text para-font fw-semibold">What's covered</h4>
-                <div class="row align-items-start">
-                    <div class="col-12 d-flex flex-column justify-content-center align-items-center p-4">
-                        <h5 class="text-start text-uppercase black-text para-font fw-semibold">Malfunction & breakage</h5>
-                        <div class="d-flex flex-column align-items-start justify-content-center">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                                    <p class="black-text mb-0 h6">Frame, spring, joint, mechanism</p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                                    <p class="black-text mb-0 h6">Power motion components</p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                                    <p class="black-text mb-0 h6">Adjustable bed frames</p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                                    <p class="black-text mb-0 h6">Scratches which penetrate the finish</p>
-                                </div>
+                <div class="row">
+                    <div class="col-12 p-4">
+                        <h5 class="text-center text-uppercase black-text para-font fw-semibold">Malfunction & breakage</h5>
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-xl-5 offset-md-4 offset-xl-5 gx-md-0">
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                                  <p class="black-text mb-0 h6">Frame, spring, joint, mechanism</p>
+                              </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                                  <p class="black-text mb-0 h6">Power motion components</p>
+                              </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                                  <p class="black-text mb-0 h6">Adjustable bed frames</p>
+                              </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                                  <p class="black-text mb-0 h6">Scratches which penetrate the finish</p>
+                              </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                                    <p class="black-text mb-0 h6">Warping, lifting, or bubbling veneer</p>
-                                </div>
-                                
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                                    <p class="black-text mb-0 h6">Breakage of glass</p>
-                                </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                                  <p class="black-text mb-0 h6">Warping, lifting, or bubbling veneer</p>
+                              </div>
+                              
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                                  <p class="black-text mb-0 h6">Breakage of glass</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
-                    <div class="col-12 d-flex flex-column justify-content-center align-items-center p-4">
-                        <h5 class="text-start text-uppercase black-text para-font fw-semibold">Stains & Upkeep</h5>
-                        <div class="d-flex flex-column align-items-start justify-content-center">
+                    <div class="col-12 p-4">
+                        <h5 class="text-center text-uppercase black-text para-font fw-semibold">Stains & Upkeep</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-5 offset-md-4 offset-xl-5 gx-md-0">
+                              <div class="d-flex flex-column align-items-start justify-content-center">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
                                     <p class="black-text mb-0 h6">Food, drinks, oil stains, & grease</p>
@@ -165,43 +171,49 @@
                                     <p class="black-text mb-0 h6">Liquid rings & heat marks</p>
                                 </div>
                         </div>
+                            </div>
+                        </div>
                     </div>
                     <!---->
-                    <div class="col-12 d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4 class="text-start text-uppercase black-text para-font fw-semibold">what's not covered</h4>
-                        <div class="d-flex flex-column align-items-start justify-content-center">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Wear and tear</p>
-                                    <i class="fa-solid fa-circle-info black-text mx-2"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Pet damage</p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Permanent marker stains</p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Accumulation of stains, soil, & perspiration</p>
-                                </div>
+                    <div class="col-12 p-4">
+                        <h4 class="text-center text-uppercase black-text para-font fw-semibold">what's not covered</h4>
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-xl-5 offset-md-4 offset-xl-5 gx-md-0">
+                            <div class="d-flex flex-column align-items-start justify-content-center">
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Wear and tear</p>
+                                  <i class="fa-solid fa-circle-info black-text mx-2"></i>
+                              </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Pet damage</p>
+                              </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Permanent marker stains</p>
+                              </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Accumulation of stains, soil, & perspiration</p>
+                              </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Seam separation & manufacturer defects</p>
-                                </div>
-                                
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Cracking & peeling, fading & discoloration</p>
-                                </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Seam separation & manufacturer defects</p>
+                              </div>
+                              
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Cracking & peeling, fading & discoloration</p>
+                              </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                                    <p class="black-text mb-0 h6">Abuse or misuse</p>
-                                </div>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                                  <p class="black-text mb-0 h6">Abuse or misuse</p>
+                              </div>
+                      </div>
+                          </div>
                         </div>
                     </div>
                     <!---->
@@ -221,26 +233,26 @@
         <div class="row d-flex flex-column">
           <!--Hero banner-->
           <div class="col-sm-12 g-0 mb-4">
-            <div class="row align-items-center g-0">
-              <div class="col-12 col-md-5 d-flex justify-content-start flex-column">
+            <div class="row align-items-center g-0 smartOne-app-background">
+              <div class="col-12 col-md-6 d-flex justify-content-start flex-column">
                 <img src="./images/SmartOnePlan_Appliances_Logo_colour.png" class="img-fluid smartOne-App-logo mb-2" />
-                <div class="navy-background p-3 d-flex justify-content-start">
-                  <h5 class="para-font white-text text-uppercase fw-semibold text-start d-flex justify-content-start align-items-center mb-0">Five year service, repair, and protection plan</h5>
+                <div class="navy-rightAngled-background p-3 d-flex justify-content-start">
+                  <h5 class="para-font white-text text-uppercase fw-semibold text-start d-flex justify-content-start align-items-center mb-0 mt-2">Five year service, repair, and protection plan</h5>
                 </div>
-                <div class="lightgreen-background">
-                  <div class="d-flex justify-content-evenly align-items-center">
-                    <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center">Refrigerator</p>
+                <div class="lightgreen-angled-background">
+                  <div class="d-flex justify-content-start align-items-center">
+                    <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Refrigerator</p>
                     <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
-                    <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center">Built-in microwave</p>
+                    <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Built-in microwave</p>
                     <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
-                    <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center">Laundry washer and dryer</p>
+                    <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Laundry washer and dryer</p>
                   </div>
                 </div>
               </div>
               <!---->
-              <div class="col-sm-12 col-md-7 d-flex justify-content-end">
+              <!--<div class="col-sm-12 col-md-7 d-flex justify-content-end">
                 <img src="./images/smartOne-APP.png" class="img-fluid" />
-              </div>
+              </div>-->
             </div>
           </div>
           <!--overview title-->
@@ -252,51 +264,59 @@
           <!--covered section-->
           <div class="col-sm-12 my-4">
             <div class="row">
-              <div class="col-12 d-flex flex-column justify-content-center align-items-center p-4">
+              <div class="col-12 p-4">
                 <h4 class="text-center text-uppercase black-text para-font fw-semibold">What's covered</h4>
-                <div class="d-flex flex-column align-items-start justify-content-center">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                    <p class="black-text mb-0 h6">Parts &amp; labour</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                    <p class="black-text mb-0 h6">General repair</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                    <p class="black-text mb-0 h6">No lemon guarantee</p>
-                    <i class="fa-solid fa-circle-info black-text mx-2"></i>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
-                    <p class="black-text mb-0 h6">Food spoilage guarantee</p>
-                    <i class="fa-solid fa-circle-info black-text mx-2"></i>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-xl-5 offset-md-4 offset-xl-5 gx-md-0">
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                        <p class="black-text mb-0 h6">Parts &amp; labour</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                        <p class="black-text mb-0 h6">General repair</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                        <p class="black-text mb-0 h6">No lemon guarantee</p>
+                        <i class="fa-solid fa-circle-info black-text mx-2"></i>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-check lightgreen-text h6 me-2"></i>
+                        <p class="black-text mb-0 h6">Food spoilage guarantee</p>
+                        <i class="fa-solid fa-circle-info black-text mx-2"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 d-flex flex-column justify-content-center align-items-center p-4">
+              <div class="col-12 p-4">
                 <h4 class="text-center text-uppercase black-text para-font fw-semibold">What's not covered</h4>
-                <div class="d-flex justify-content-center align-items-start flex-column">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                    <p class="black-text mb-0 h6">Defects to non-functional parts</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                    <p class="black-text mb-0 h6">Cosmetic damage of any kind</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                    <p class="black-text mb-0 h6">Improper installation or exposure to weather</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                    <p class="black-text mb-0 h6">LCD screens, software problems, or data recovery</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center">
-                    <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
-                    <p class="black-text mb-0 h6">Negligence or abuse</p>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-xl-5 offset-md-4 offset-xl-5 gx-md-0">
+                    <div class="d-flex justify-content-center align-items-start flex-column">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                        <p class="black-text mb-0 h6">Defects to non-functional parts</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                        <p class="black-text mb-0 h6">Cosmetic damage of any kind</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                        <p class="black-text mb-0 h6">Improper installation or exposure to weather</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                        <p class="black-text mb-0 h6">LCD screens, software problems, or data recovery</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
+                        <p class="black-text mb-0 h6">Negligence or abuse</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -357,7 +377,7 @@
     <!--6th orange line-->
     <div class="container-fluid peach-background my-5 d-flex align-items-center justify-content-md-between">
         <p class="black-text h4 p-md-4 w-60 p-2 mb-0">Looking to activate the SmartOne plan you purchased in store?</p>
-        <a href="#" class="navy-round-background text-decoration-none white-text h6 text-uppercase" id="activate-now-button" role="button">Activate now</a>
+        <a href="https://smartoneactivation.azurewebsites.net/" class="navy-round-background text-decoration-none white-text h6 text-uppercase" id="activate-now-button" role="button" target="_blank">Activate now</a>
     </div>
     <!--6th orange div ends-->
 
@@ -367,7 +387,7 @@
             <hr class="green-border m-0">
             <!--expand all-->
             <div class="d-flex justify-content-end my-3">
-                <button class="btn btn-primary green-btn btn-large text-uppercase btn-lg fw-semibold">Expand all</button>
+                <button class="btn btn-primary green-btn btn-large text-uppercase btn-lg fw-semibold" id="expandAll">Expand all</button>
             </div>
             <!--Accordion-->
             <div class="accordion accordion-flush" id="FAQAccordion">
@@ -590,9 +610,9 @@
                     <img src="./images/ZH_Logo_Vert_White 2.png" class="img-fluid"/>
                 </div>
                 <div class="d-flex justify-content-evenly align-items-center mt-3">
-                    <a class="lightblue-text h4" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="lightblue-text h4" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="lightblue-text h4" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="lightblue-text h4" href="https://www.facebook.com/zucorahomesmarterliving/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="lightblue-text h4" href="https://www.instagram.com/zucorahome/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="lightblue-text h4" href="https://www.linkedin.com/company/zucorahome/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>    
         </div>
