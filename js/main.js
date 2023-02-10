@@ -11,7 +11,7 @@
         window.setInterval(function(){
             const randomNumber = Math.floor(Math.random() * (3 - 0) + 0);
             target.innerHTML = wordArray[randomNumber] + '?';
-        },1500);
+        },2000);
 
         
 
