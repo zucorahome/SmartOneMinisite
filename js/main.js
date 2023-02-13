@@ -35,4 +35,36 @@
     }
    },false);
 
+   //tooltips
+   //const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+//const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));   
+
+const windowScreesize = window.innerWidth;
+
+
+let tooltips = document.querySelectorAll('[data-toggle]');
+tooltips.forEach((n)=>{
+    let showContentId = n.dataset.toggle;
+    let currentId = '#' + showContentId;
+    let currentToolClass = currentId + '.tooltip-content'    
+        if(windowScreesize >= 768){
+            n.addEventListener('mouseover',function(){
+                document.querySelector(currentToolClass).style.visibility = 'visible';
+            },false);
+            n.addEventListener('mouseout',function(){   
+                document.querySelector(currentToolClass).style.visibility = 'hidden';
+            },false);
+        }
+
+        else if(windowScreesize < 768){
+            n.addEventListener("click",function(){
+                console.log(n);
+            },false);
+        }
+    }
+
+    );
+
+    
+
 })();

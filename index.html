@@ -79,14 +79,14 @@
                   </div>
                   <!---->
                   <div class="lightblue-angled-background">
-                        <div class="d-flex justify-content-evenly align-items-center">
-                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold">Furniture</p>
-                            <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize"></i>
-                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold">Wood</p>
-                            <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize"></i>
-                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold">Glass</p>
-                            <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize"></i>
-                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold">Area rugs</p>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-4 mx-1">Furniture</p>
+                            <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
+                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-4 mx-2">Wood</p>
+                            <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
+                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-4 mx-1">Glass</p>
+                            <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
+                            <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-4 mx-1">Area rugs</p>
                         </div>
                   </div>
                 </div>
@@ -186,7 +186,18 @@
                               <div class="d-flex justify-content-center align-items-center">
                                   <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
                                   <p class="black-text mb-0 h6">Wear and tear</p>
-                                  <i class="fa-solid fa-circle-info black-text mx-2"></i>
+                                  <a href="javascript:void(0)" class="tooltips" data-toggle="toggle1"><i class="fa-solid fa-circle-info black-text mx-2"></i></a>
+                                  <div id="toggle1" class="p-3 tooltip-content">
+                                    <h6 class="black-text">Normal degradation of an item from ongoing usage, even when it is being properly maintained.</h6>
+                                    <ol>
+                                        <li class="black-text"> Pet damage</li>
+                                        <li class="black-text">Permanent marker stains</li>
+                                        <li class="black-text">Accumulation of stains, soil, & perspiration</li>
+                                        <li class="black-text">Seam separation & manufacturer defects</li>
+                                        <li class="black-text">Cracking & peeling, fading & discoloration</li>
+                                        <li class="black-text">Abuse or misuse</li>
+                                    </ol>
+                                  </div>
                               </div>
                               <div class="d-flex justify-content-center align-items-center">
                                   <i class="fa-solid fa-xmark cross-text h5 me-2"></i>
@@ -661,7 +672,7 @@
       </div>
     </footer>
     <!--Pooper js-->
-    <!--<script src="node_modules/@popperjs/core/lib/popper.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>-->
     <!--bootstrap-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
