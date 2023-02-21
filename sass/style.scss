@@ -141,6 +141,12 @@ h6,
     font-size: 4.5rem; //from zucoradev
 }
 
+@media screen and (max-width:768px){
+    .major-headline{
+        font-size: 5.5vh;
+    }
+}
+
 //Text color
 
 .white-text {
@@ -157,6 +163,10 @@ h6,
 
 .peach-text {
     color: $peach;
+}
+
+.orange-text{
+    color:$orange;
 }
 
 .black-text{
@@ -293,6 +303,10 @@ h6,
     margin-bottom:4em;
 }
 
+.margin-top-6{
+    margin-top:6em;
+}
+
 //Borders
 
 .green-border{
@@ -341,13 +355,26 @@ h6,
     height:600px;
 }
 
-
+.fa-circle-info{
+    &:hover{
+        color: $orange;
+        transition: all 0.3s ease-in;
+        border-color: $orange;
+    }
+}
 .smartOne-app-background{
     background-image: url('../images/smartOne-APP.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     height:600px;
+}
+
+a.peach-text{
+    &:hover{
+        color:$orange;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -424,6 +451,7 @@ h6,
 
     .accordion-button{
         background-color: #f5f5f5;
+        padding: 1rem 3rem;
     }
 
     .accordion-button:not(.collapsed), .accordion-button:focus{
@@ -432,6 +460,14 @@ h6,
         box-shadow: none;
     }
 
+}
+
+@media screen and (max-width:768px){
+    #FAQAccordion{
+        .accordion-button{
+            padding:1rem;
+        }
+    }
 }
 
 .fa-brands{
