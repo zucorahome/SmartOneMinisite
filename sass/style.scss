@@ -384,10 +384,11 @@ a.peach-text{
     }
 
     .smartOne-app-background{
-        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/smartOne-APP.png');
+        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/smartOne-APP.png');
         height: 400px;
     }
 }
+
 
 .furniture-main-image{
     position: relative;
@@ -428,7 +429,7 @@ a.peach-text{
 #activate-now-button{
     position: absolute;
     right:10%;
-    padding: 40px 0px 0px 0px;
+    padding: 45px 0px 0px 0px;
     transition: scale 0.6s ease-in-out;
 
     &:hover{
