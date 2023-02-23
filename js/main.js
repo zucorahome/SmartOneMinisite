@@ -10,16 +10,24 @@
         const wordArray = ['sofa','fridge','oven'];
         window.setInterval(function(){
             const randomNumber = Math.floor(Math.random() * (3 - 0) + 0);
+            target.style.opacity = '0';
             target.innerHTML = wordArray[randomNumber] + '?';
+            //window.setTimeout(wordFade(),1000);
+            wordFade();
+            //window.setTimeout((target.style.opacity = '0'),1000);
         },2000);
 
-        
+
+
+        function wordFade(){
+            document.querySelector('#changeWord').style.opacity = 1;
+        }
 
     //display section
    function showSection(mainLink, mainSection){
     document.querySelector(mainLink).addEventListener('click',function(){
         document.querySelector(mainSection).classList.toggle('d-none');
-        this.children[0].classList.toggle('fa-caret-down');
+        this.childNodes[1].children[0].children[0].classList.toggle('fa-caret-down');
     },false);
    }
 

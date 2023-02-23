@@ -277,6 +277,12 @@ h6,
 }
 
 /*Header styling*/
+#changeWord {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+
 /*2nd div participate section*/
 .participate-section {
   background-color: grey;
@@ -288,6 +294,10 @@ h6,
 }
 
 /**/
+#showFurnitureSection, #showApplianceSection {
+  cursor: pointer;
+}
+
 .smartOne-furn-background {
   background-image: url("../images/smartOne-FURN.png");
   background-size: contain;
