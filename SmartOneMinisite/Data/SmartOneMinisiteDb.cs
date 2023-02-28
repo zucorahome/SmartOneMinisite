@@ -17,7 +17,7 @@ namespace SmartOneMinisite.Data
 
          if (IsDbAvailable)
          {
-            String DbConnectionString = configuration.GetConnectionString("DbConnectionStrDevLocal");
+            String DbConnectionString = configuration.GetConnectionString("DbConnectionStrDev");
             using (SqlConnection conn = new SqlConnection(DbConnectionString))
             {
                conn.Open();
@@ -44,7 +44,7 @@ namespace SmartOneMinisite.Data
       {
          bool DbAvailable = false;
          //String DbConnectionString = configuration.GetConnectionString("DbConnectionStrDev");
-         String DbConnectionString = configuration.GetConnectionString("DbConnectionStrDevLocal");
+         String DbConnectionString = configuration.GetConnectionString("DbConnectionStrDev");
          using (SqlConnection conn = new SqlConnection(DbConnectionString))
          {
             try
