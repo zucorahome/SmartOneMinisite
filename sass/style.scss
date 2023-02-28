@@ -343,7 +343,7 @@ h6,
 
 .participate-section {
     background-color: grey;
-    background-image: linear-gradient(0deg, rgba(32, 42, 68, 0.6), rgba(32, 42, 68, 0.6)), url('../images/contest-promo.png');
+    background-image: linear-gradient(0deg, rgba(32, 42, 68, 0.6), rgba(32, 42, 68, 0.6)), url('../images/contest-promo-png.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
@@ -358,7 +358,7 @@ h6,
 }
 
 .smartOne-furn-background{
-    background-image:url('../images/smartOne-FURN.png');
+    background-image:url('../images/smartOne-FURN.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
@@ -373,7 +373,7 @@ h6,
     }
 }
 .smartOne-app-background{
-    background-image: url('../images/smartOne-APP.png');
+    background-image: url('../images/smartOne-APP.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -387,14 +387,15 @@ a.peach-text{
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1366px){
     .smartOne-furn-background{
-        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/smartOne-FURN.png');
+        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/smartOne-FURN.jpg');
         height: 400px;
     }
 
     .smartOne-app-background{
-        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/smartOne-APP.png');
+        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/smartOne-APP.jpg');
+        //background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/smartOne-APP.jpg');
         height: 400px;
     }
 }
@@ -447,6 +448,11 @@ a.peach-text{
     }
 }
 
+@media screen and (max-width:768px){
+    #activate-now-button{
+        right:2%;
+    }
+}
 
 /*Accordion FAQ style*/
 
@@ -471,6 +477,10 @@ a.peach-text{
         box-shadow: none;
     }
 
+    .accordion-body{
+        padding: 1rem 3rem;
+    }
+
 }
 
 @media screen and (max-width:768px){
@@ -478,19 +488,26 @@ a.peach-text{
         .accordion-button{
             padding:1rem;
         }
+
+        .accordion-body{
+            padding: 1rem;
+        }
+    
+
     }
 }
 
-.fa-brands{
-    transition: scale 0.5s ease-in-out;
-    -webkit-transition: scale 0.5s ease-in-out;
-    &:hover{
-        background-color: white;
-        color:$navyblue;
-        scale:1.15;
-        padding: 5px;
+
+    .fa-brands{
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        &:hover{
+            background-color: white;
+            color:$navyblue;
+            //scale:1.15;
+            padding: 5px;
+        }
     }
-}
 
 
 

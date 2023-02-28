@@ -15,7 +15,7 @@
             //window.setTimeout(wordFade(),1000);
             wordFade();
             //window.setTimeout((target.style.opacity = '0'),1000);
-        },2000);
+        },1000);
 
 
 
@@ -38,9 +38,15 @@
 
    document.querySelector('#expandAll').addEventListener('click',function(){
     let AllFAQAccordions = document.querySelectorAll('#FAQAccordion .accordion-collapse');
+    
     for(const x of AllFAQAccordions){
-        x.classList.add('show');
+        x.classList.toggle('show');
     }
+        if(this.innerHTML == 'Expand all'){
+            this.innerHTML = 'Unexpand all';
+        }else{
+            this.innerHTML = 'Expand all';
+        }
    },false);
 
    
