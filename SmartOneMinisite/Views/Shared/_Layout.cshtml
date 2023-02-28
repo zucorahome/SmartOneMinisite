@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SmartOne Plan - mini site</title>
+      <!--google anaylytics-->
+      <!--bootstrap-->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <!--font awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--stylesheet-->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+</head>
+<body>
+   @*<header>
+      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+         <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SmartOneMinisite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+               <ul class="navbar-nav flex-grow-1">
+                  <li class="nav-item">
+                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>*@
+   <div class="container">
+      <main role="main" class="pb-3">
+         @RenderBody()
+      </main>
+   </div>
+
+   <footer class="container-fluid navy-background">
+      <div class="row p-3 align-items-center g-3">
+         <div class="col-sm-12 col-md-2">
+            <div class="col">
+               <div class="d-flex justify-content-center">
+                  <img src="./images/ZH_Logo_Vert_White 2.png" class="img-fluid" />
+               </div>
+               <div class="d-flex justify-content-evenly align-items-center mt-3">
+                  <a class="lightblue-text h4" href="https://www.facebook.com/zucorahomesmarterliving/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a class="lightblue-text h4" href="https://www.instagram.com/zucorahome/"><i class="fa-brands fa-instagram"></i></a>
+                  <a class="lightblue-text h4" href="https://www.linkedin.com/company/zucorahome/"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-12 col-md-10 d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="row g-3">
+               <div class="col-sm-12 col-md-auto px-md-5 footer-border">
+                  <p class="fw-semibold text-uppercase white-text h5">About us</p>
+                  <div class="d-flex flex-column">
+                     <a href="#" class="white-text text-decoration-none mb-2">Our History</a>
+                     <a href="#" class="white-text text-decoration-none mb-2">Our Values</a>
+                     <a href="#" class="white-text text-decoration-none mb-2">Meet the Team</a>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-auto px-md-5 footer-border">
+                  <p class="fw-semibold text-uppercase white-text h5">Join us</p>
+                  <div class="d-flex flex-column">
+                     <a href="#" class="white-text text-decoration-none mb-2">Become a Partner</a>
+                     <a href="#" class="white-text text-decoration-none mb-2">SmartOne Plan</a>
+                     <a href="#" class="white-text text-decoration-none mb-2">Careers</a>
+                  </div>
+               </div>
+
+               <div class="col-sm-12 col-md-auto px-md-5 footer-border">
+                  <p class="fw-semibold text-uppercase white-text h5">Terms of use</p>
+                  <div class="d-flex flex-column">
+                     <a href="#" class="white-text text-decoration-none mb-2">Privacy Policy</a>
+                     <a href="#" class="white-text text-decoration-none mb-2">Conditions of Use</a>
+                     <a href="#" class="white-text text-decoration-none mb-2">Service Agreement</a>
+                  </div>
+               </div>
+
+               <div class="col-sm-12 col-md-auto px-md-5">
+                  <p class="fw-semibold text-uppercase white-text h5">Contact</p>
+                  <div class="d-flex flex-column">
+                     <p class="white-text">552 Clarke Rd,<br />London, ON N5V 3K5</p>
+                     <a class="white-text text-decoration-none" href="tel:18003882640">+1 800-388-2640</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+   <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="~/js/site.js" asp-append-version="true"></script>
+   @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
