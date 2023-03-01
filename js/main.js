@@ -43,7 +43,7 @@
         x.classList.toggle('show');
     }
         if(this.innerHTML == 'Expand all'){
-            this.innerHTML = 'Unexpand all';
+            this.innerHTML = 'Collapse all';
         }else{
             this.innerHTML = 'Expand all';
         }
