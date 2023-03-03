@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <!--header-->
@@ -55,9 +57,9 @@
     <!--2nd div ends-->
     <!--3rd section-->
 
-    <div class="container-fluid lightblue-background mb-5" id="showFurnitureSection">
+    <div class="container-fluid lightblue-background mb-md-5 mb-2" id="showFurnitureSection">
         <div class="pt-3 pb-2 px-md-5">
-            <a href="javascript:void(0)" class="text-uppercase text-decoration-none fw-semibold h4 para-font black-text py-3">Smartone plan furniture <i class="fa-solid fa-caret-right linkCaret"></i></a>
+            <a href="javascript:void(0)" class="text-uppercase text-decoration-none fw-semibold h4 para-font black-text py-3">Smartone furniture <i class="fa-solid fa-caret-right linkCaret"></i></a>
         </div>
     </div>
     <!--3rd section ends-->
@@ -69,6 +71,11 @@
             <div class="col-sm-12 g-0 mb-4">
               <div class="container">
                 <div class="row align-items-center g-0 smartOne-furn-background">
+                  <!--For mobile Image-->
+                  <div class="d-block d-sm-none col-12">
+                    <img src="./images/smartOne-FURN.jpg" class="img-fluid"/>
+                  </div>
+                  <!--For mobile ends-->
                   <div class="col-12 col-md-9 offset-md-3 col-xl-8 offset-xl-4 col-xxl-6 offset-xxl-6">
                     <img src="./images/SmartOnePlan_Furniture_Logo_colour.png" class="img-fluid smartOne-Furn-logo mb-2" />
                     <!--id="angle-background"-->
@@ -82,9 +89,9 @@
                               <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
                               <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-3 mx-2">Wood</p>
                               <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
-                              <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-3 mx-1">Glass</p>
+                              <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-3 mx-1">Area rug</p>
                               <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
-                              <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-3 mx-1">Area rugs</p>
+                              <p class="black-text text-uppercase mb-0 mt-1 fw-semibold mx-md-3 mx-1">Glass</p>
                           </div>
                     </div>
                   </div>
@@ -92,13 +99,13 @@
               </div>
             </div>
             <!--title-->
-            <div class="col-sm-12 my-4">
+            <div class="col-sm-12 mb-4 margin-top-5">
                 <h2 class="text-uppercase navy-text para-font fw-bold mb-0 text-center h1">overview of your plan</h3>
                 <hr class="lightblue-border m-0">
                 <p class="text-center black-text h5 my-2 para-font">Never be caught off guard. <a href="#" class="peach-text">Read complete terms and conditions here.</a></p>
             </div>
             <!--info section-->
-            <div class="col-sm-12 my-4">
+            <div class="col-sm-12 mt-4">
                 <h4 class="text-center text-uppercase black-text para-font fw-semibold">What's covered</h4>
                 <div class="row">
                     <div class="col-12 p-4">
@@ -251,9 +258,9 @@
         </div>
     </div>
     <!--4th section starts-->
-    <div class="container-fluid lightgreen-background mb-5" id="showApplianceSection">
+    <div class="container-fluid lightgreen-background mb-md-5 mb-2 mt-5" id="showApplianceSection">
         <div class="pt-3 pb-2 px-md-5">
-            <a href="javascript:void(0)" class="text-uppercase text-decoration-none fw-semibold h4 para-font black-text py-3">Smartone plan appliances <i class="fa-solid fa-caret-right"></i></a>
+            <a href="javascript:void(0)" class="text-uppercase text-decoration-none fw-semibold h4 para-font black-text py-3">Smartone appliances <i class="fa-solid fa-caret-right"></i></a>
         </div>
     </div>
     <!--4th section ends-->
@@ -264,18 +271,23 @@
           <div class="col-sm-12 g-0 mb-4">
             <div class="container">
               <div class="row align-items-center g-0 smartOne-app-background">
-                <div class="col-12 col-md-10 col-xl-8 col-xxl-6 d-flex justify-content-start flex-column">
+                <!--For mobile only image-->
+                <div class="d-block d-sm-none col-12">
+                    <img src="./images/smartOne-APP.jpg" class="img-fluid"/>
+                </div>
+                <!---->
+                <div class="col-12 col-md-10 col-xl-8 col-xxl-6 d-flex justify-content-md-start justify-content-center flex-column">
                   <img src="./images/SmartOnePlan_Appliances_Logo_colour.png" class="img-fluid smartOne-App-logo mb-2" />
                   <div class="navy-rightAngled-background p-3 d-flex justify-content-start">
                     <h5 class="para-font white-text text-uppercase fw-semibold text-start d-flex justify-content-start align-items-center mb-0 mt-2">Five year service, repair, and protection plan</h5>
                   </div>
                   <div class="lightgreen-angled-background">
                     <div class="d-flex justify-content-start align-items-center">
-                      <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Refrigerator</p>
-                      <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
                       <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Built-in microwave</p>
                       <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
-                      <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Washer and dryer</p>
+                      <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Fridge</p>
+                      <i class="fa-sharp fa-solid fa-circle black-text footnote-fontsize mx-2 mx-md-0"></i>
+                      <p class="black-text text-uppercase mb-0 mt-1 fw-semibold text-center mx-md-3 mx-1">Washer &amp; dryer</p>
                     </div>
                   </div>
                 </div>
@@ -284,7 +296,7 @@
             </div>
           </div>
           <!--overview title-->
-          <div class="col-sm-12 my-4">
+          <div class="col-sm-12 margin-top-5">
             <h2 class="text-uppercase navy-text para-font fw-bold mb-0 text-center h1">overview of your plan</h3>
               <hr class="green-border m-0">
               <p class="text-center black-text h5 my-2 para-font">Never be caught off guard. <a href="#" class="peach-text">Read complete terms and conditions here.</a></p>
@@ -393,11 +405,11 @@
     </div>
     <!--Appliance section ends-->
     <!--5th section starts-->
-    <div class="container-fluid margin-bottom-4">
+    <div class="container-fluid margin-bottom-4 mt-5">
         <h3 class="text-uppercase black-text para-font fw-bold mb-0 px-md-5">SmartOne Plan is easy as</h3>
         <!--<hr class="green-border m-0">-->
         <div class="justify-content-center align-items-center row mt-3">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6 mt-5 mt-md-0">
             <!--1st-->
             <div class="d-flex justify-content-start align-items-start ms-md-5">
                 <div class="me-3">
@@ -732,5 +744,7 @@
     <!--bootstrap-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <!--Jquery UI-->
+    <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script> -->
 </body>
 </html>

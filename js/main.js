@@ -7,21 +7,16 @@
 
      //changing text function
         const target = document.querySelector('#changeWord');
-        const wordArray = ['sofa','fridge','oven'];
-        window.setInterval(function(){
-            const randomNumber = Math.floor(Math.random() * (3 - 0) + 0);
-            target.style.opacity = '0';
-            target.innerHTML = wordArray[randomNumber] + '?';
-            //window.setTimeout(wordFade(),1000);
-            wordFade();
-            //window.setTimeout((target.style.opacity = '0'),1000);
-        },1000);
-
-
-
-        function wordFade(){
-            document.querySelector('#changeWord').style.opacity = 1;
-        }
+        const wordArray = ['sofa?','fridge?','oven?'];
+       
+        (function displayWord(i) {
+            $("#changeWord").text(wordArray[i]).fadeIn(1000, function(){
+                $(this).delay(600).fadeOut(1000, function () {
+                    displayWord((i + 1) % wordArray.length);
+                  });
+              });
+          })(0);
+          
 
     //display section
    function showSection(mainLink, mainSection){

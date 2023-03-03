@@ -107,13 +107,17 @@ h6,
   font-size: 0.35rem;
 }
 
+p {
+  font-size: 1rem;
+}
+
 .major-headline {
   font-size: 4.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .major-headline {
-    font-size: 5.5vh;
+    font-size: 5vh;
   }
 }
 .white-text {
@@ -187,7 +191,6 @@ h6,
 
 .lightblue-angled-background {
   background-color: #9FAee5;
-  clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .peach-background {
@@ -207,19 +210,30 @@ h6,
 
 .navy-angled-background {
   background-color: #202A44;
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .navy-rightAngled-background {
   background-color: #202A44;
-  clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
 }
 
 .lightgreen-angled-background {
   background-color: #a0dab3;
-  clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
 }
 
+@media screen and (min-width: 768px) {
+  .navy-angled-background {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navy-rightAngled-background {
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+  }
+  .lightblue-angled-background {
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .lightgreen-angled-background {
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+  }
+}
 .newsletter-blue-background {
   background-image: url("../images/blue-background.png");
   background-repeat: repeat;
@@ -253,6 +267,10 @@ h6,
   margin-bottom: 4em;
 }
 
+.margin-top-5 {
+  margin-top: 5em;
+}
+
 .margin-top-6 {
   margin-top: 6em;
 }
@@ -277,12 +295,6 @@ h6,
 }
 
 /*Header styling*/
-#changeWord {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-}
-
 /*2nd div participate section*/
 .participate-section {
   background-color: grey;
@@ -325,14 +337,21 @@ a.peach-text:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 577px) {
+  .smartOne-furn-background, .smartOne-app-background {
+    background: white;
+    background-image: none;
+    height: auto;
+  }
+}
+@media screen and (min-width: 578px) and (max-width: 1366px) {
   .smartOne-furn-background {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/smartOne-FURN.jpg");
-    height: 400px;
+    height: 300px;
   }
   .smartOne-app-background {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/smartOne-APP.jpg");
-    height: 400px;
+    height: 300px;
   }
 }
 .furniture-main-image {
@@ -346,10 +365,19 @@ a.peach-text:hover {
   width: 75%;
 }
 
-.smartOne-Furn-logo {
-  right: -25%;
+@media screen and (max-width: 577px) {
+  .smartOne-Furn-logo, .smartOne-App-logo {
+    width: 100%;
+  }
+  .smartOne-Furn-logo {
+    right: 0%;
+  }
 }
-
+@media screen and (min-width: 578px) {
+  .smartOne-Furn-logo {
+    right: -25%;
+  }
+}
 #SmartOne-furniture-section, #SmartOne-appliance-section {
   -webkit-animation: fadeIn 2s;
   animation: fadeIn 2s;
