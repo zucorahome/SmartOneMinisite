@@ -10,10 +10,10 @@ namespace SmartOneMinisite.Data
 {
    public class SmartOneMinisiteDb
    {
-      public String AddUSignupEmail(IConfiguration configuration, String SignupEmail)
+      public int AddSignupEmail(IConfiguration configuration, String SignupEmail)
       {
          bool IsDbAvailable = DbAvailableStatus(configuration);
-         String returnMessage = "";
+         int resultInt = -1;
 
          if (IsDbAvailable)
          {
@@ -25,17 +25,28 @@ namespace SmartOneMinisite.Data
 
                using (SqlCommand cmd = new SqlCommand(sql, conn))
                {
-                  cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                  cmd.Parameters.AddWithValue("@SignupEmail", SignupEmail);
-                  int resultInt = cmd.ExecuteNonQuery();
-                  returnMessage = resultInt > 0 ? "Email Address[" + SignupEmail + "] is saved." : "Email Address[" + SignupEmail + "] either already exists or there was an issue saving this email.";
+                   cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                   cmd.Parameters.AddWithValue("@SignupEmail", SignupEmail);
+                   object result = cmd.ExecuteScalar();//{-1: A problem has occurred, 0: Saved successfully, 1: email already exists.}
+
+                   if (result != null)
+                   {
+                        try
+                        {
+                            resultInt = Int32.Parse(result.ToString());
+                        }
+                        catch
+                        {
+
+                        }
+                   }                                      
                }
             }
 
 
 
          }
-         return returnMessage;
+         return resultInt;
 
       }
 

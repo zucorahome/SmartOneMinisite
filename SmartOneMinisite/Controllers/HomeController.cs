@@ -31,8 +31,9 @@ namespace SmartOneMinisite.Controllers
       public IActionResult Index([FromQuery] String SignupEmailAddress)
       {
          
-         String response = new SmartOneMinisiteDb().AddUSignupEmail(_configuration, SignupEmailAddress);
-         String result = "{\"Status\":\"true\",\"message\":\"" + response + "\"}";
+         int response = new SmartOneMinisiteDb().AddSignupEmail(_configuration, SignupEmailAddress);
+         String responseMessage = response == 0 ? "Email Address[" + SignupEmailAddress + "] is saved." : response == 1 ?  "Email Address[" + SignupEmailAddress + "]  already exists" : "There was some problem in saving email address[" + SignupEmailAddress + "]";
+         String result = "{\"Status\":\""+response+"\",\"message\":\"" + responseMessage + "\"}";
          return Json(result);
       }
       public IActionResult Privacy()

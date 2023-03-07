@@ -658,8 +658,8 @@
 <!--Newsletter section-->
 <div class="container my-5 text-center g-0">
    <div class="newsletter-blue-background row align-items-center p-5 g-0">
-      <h3 class="para-font text-center">Need a hand with home maintenance?</h3>
-      <p class="text-center mb-0">Sign up to receive communications like tips & tricks and promotions from ZucoraHome.</p>
+      <h3 class="para-font text-center"  id="titleForm">Need a hand with home maintenance?</h3>
+      <p class="text-center mb-0" id="messageForm">Sign up to receive communications like tips & tricks and promotions from ZucoraHome.</p>
       <!--form-->
       <form class="row g-3 align-items-center justify-content-center d-flex flex-column flex-md-row" method="post" asp-action="Go">
          <div class="col-sm-12 col-md-7">
@@ -692,9 +692,48 @@
                contentType: 'application/json',
                success: function (result) {
                   
-                  const ServerRespObj = JSON.parse(result);
-                  
-                  console.log(result.toString());
+                   const ServerRespObj = JSON.parse(result);
+
+                   console.log(result.toString());
+                   console.log(ServerRespObj);
+                   /*
+                    * ServerRespObj.Status {-1: A problem has occurred, 0: Saved successfully, 1: email already exists.}
+                    * 
+                    * 
+                    * */
+                   if (ServerRespObj.Status == '0') {
+                       //console.log('It should show the success messages');
+                       if (window.location.href.indexOf('french') > 0) {
+                           $('#titleForm').text('Merci pour votre intérêt!');
+                           $('#messageForm').text('Vérifiez votre boîte de courrier indésirable et ajoutez-nous à vos contacts pour ne rien manquer!');
+                       } else {
+                           $('#titleForm').text('Thanks for signing up!');
+                           $('#messageForm').text('Check your spam box and put us in your contacts to make sure you don’t miss anything!');
+                       }
+                       $('#NewsletterForm').addClass('d-none');
+                   } else if (ServerRespObj.Status == '1') {
+                       //console.log('It should show the success messages');
+                       if (window.location.href.indexOf('french') > 0) {
+                           $('#titleForm').text('Merci pour votre intérêt!');
+                           $('#messageForm').text('Vérifiez votre boîte de courrier indésirable et ajoutez-nous à vos contacts pour ne rien manquer!');
+                       } else {
+                           $('#titleForm').text("You're already signed up!");
+                           $('#messageForm').text('But we appreciate the enthusuasm!');
+                       }
+                       $('#NewsletterForm').addClass('d-none');
+                   } else {
+                       if (ServerRespObj.Status == '0' || ServerRespObj.Status == '1') {
+                           //console.log('It should show the success messages');
+                           if (window.location.href.indexOf('french') > 0) {
+                               $('#titleForm').text('Merci pour votre intérêt!');
+                               $('#messageForm').text('Vérifiez votre boîte de courrier indésirable et ajoutez-nous à vos contacts pour ne rien manquer!');
+                           } else {
+                               $('#titleForm').text('Unfortunately there was some issue in signing you up');
+                               $('#messageForm').text('Please contact ??????!');
+                           }
+                           $('#NewsletterForm').addClass('d-none');
+                       }
+                   }
                },
                error: function (err) {
 
