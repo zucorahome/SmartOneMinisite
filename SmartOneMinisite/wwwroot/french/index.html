@@ -461,7 +461,7 @@
     <!--6th orange line-->
     <div class="container-fluid peach-background d-flex align-items-center justify-content-md-between margin-bottom-4">
         <p class="black-text h5 py-md-4 px-md-5 w-60 p-2 mb-0 w-75">Vous cherchez à activer le plan SmartOne que vous avez acheté en magasin?</p>
-        <a href="https://smartoneactivation.azurewebsites.net/" class="navy-round-background text-decoration-none white-text h6 text-uppercase" id="activate-now-button" role="button" target="_blank">Activez-le ic</a>
+        <a href="https://smartoneactivation.azurewebsites.net/" class="navy-round-background text-decoration-none white-text h6 text-uppercase" id="activate-now-button" role="button" target="_blank">Activez ic</a>
     </div>
     <!--6th orange div ends-->
     <!--FAQ section starts-->
@@ -470,7 +470,7 @@
         <!--<hr class="green-border m-0">-->
         <!--expand all-->
         <div class="d-flex justify-content-end my-3">
-            <button class="btn btn-primary green-btn btn-large text-uppercase btn-lg fw-semibold" id="expandAll">Expand all</button>
+            <button class="btn btn-primary green-btn btn-large text-uppercase btn-lg fw-semibold" id="expandAll">Ouvrir tout</button>
         </div>
         <!--Accordion-->
         <div class="accordion accordion-flush" id="FAQAccordion">
@@ -569,7 +569,7 @@
                 <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#FAQAccordion">
                     <div class="accordion-body para-font">
                         <p>
-                            Les questions posées ont pour objectif de vous offrir le meilleur service qui soit. Tout d'abord, nous devrons vérifier votre identité ainsi que votre achat pour nous assurer que nous parlons à la bonne personne. Pour ce faire, vous devrez nous fournir le nom de votre chien (non, non, c'est une blague!), votre nom et prénom, numéro de téléphone et numéro de facture. Si vous demeurez introuvable avec ces renseignements, nous pourrions vous demander adresse,courriel, etc. Des photos du problème sont également nécessaires pour nous donner une idée de la situation. Si nous considérons que votre situation nécessite l'intervention d'un service de réparation qualifié, nous aurons besoin de connaître vos disponibilités pour céduler la visite.
+                            Les questions posées ont pour objectif de vous offrir le meilleur service qui soit. Tout d'abord, nous devrons vérifier votre identité ainsi que votre achat pour nous assurer que nous parlons à la bonne personne. Pour ce faire, vous devrez nous fournir le nom de votre chien (non, non, c'est une blague!), votre nom et prénom, numéro de téléphone et numéro de facture. <br />Si votre dossier demeure introuvable avec ces renseignements, nous pourrions vous demander adresse, courriel, etc. Des photos du problème sont également nécessaires pour nous donner une idée de la situation. Si nous considérons que votre situation nécessite l'intervention d'un service de réparation qualifié, nous aurons besoin de connaître vos disponibilités pour céduler la visite.
                         </p>
                     </div>
                 </div>
@@ -635,7 +635,7 @@
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#FAQAccordion">
                     <div class="accordion-body para-font">
                         <p>Vous êtes sûrement emballé⋅e de votre nouvel achat (espérons-le!), mais personne ne peut empêcher les accidents de se produire. Par conséquent, posséder un plan SmartOne est le moyen de rester calme et de trouver la tranquillité d'esprit. </p>
-                        <p><b>Expérience. </b>Depuis plus de 40 ans, ZucoraHome a aidé plus de 2 millions de familles canadiennes à garder leur maison confortable tout en respectant leur budget.</p>
+                        <p><b>Expérience. </b>Depuis plus de 40 ans, ZucoraHome a aidé plus de 4 millions de familles canadiennes à garder leur maison confortable tout en respectant leur budget.</p>
                         <p><b>Service. </b>Votre satisfaction est notre priorité. Vous recevrez des pièces approuvées par le manufacturier ainsi qu'un service de réparation rapide et qualifié. </p>
                         <p><b>Remplacement. </b>Si votre article couvert ne peut pas être réparé, nous travaillerons avec vous et nos détaillants partenaires pour trouver un remplacement approprié.</p>
                     </div>
@@ -650,7 +650,7 @@
                 </h2>
                 <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#FAQAccordion">
                     <div class="accordion-body para-font">
-                        <p>Depuis plus de 40 ans, ZucoraHome a gagné la confiance de plus de 2 millions de Canadien⋅nes titulaires de plans en respectant leur budget grâce à des plans de protection de réparation et de remplacement d'articles et à un service de protection de biens résidentiels. Nos plans sont offerts auprès de nos détaillants partenaires, ce qui explique pourquoi notre nom ne vous est peut-être pas familier. </p>
+                        <p>Depuis plus de 40 ans, ZucoraHome a gagné la confiance de plus de 4 millions de Canadien⋅nes titulaires de plans en respectant leur budget grâce à des plans de protection de réparation et de remplacement d'articles et à un service de protection de biens résidentiels. Nos plans sont offerts auprès de nos détaillants partenaires, ce qui explique pourquoi notre nom ne vous est peut-être pas familier. </p>
                         <p>
                             <b>Notre promesse</b>
                             <ul>
@@ -692,13 +692,13 @@
                     <h3 class="para-font text-center" id="MessageTitle">Besoin d'un coup de main avec l'entretien de votre maison?</h3>
                     <p class="text-center mb-0" id="MessagePara">Inscrivez-vous pour recevoir des conseils et astuces, des promotions et plus encore!</p>
                     <!--form-->
-                    <form class="row align-items-center justify-content-center d-flex flex-column flex-md-row mt-3 g-3 g-md-0">
+                    <form class="row align-items-center justify-content-center d-flex flex-column flex-md-row mt-3 g-3 g-md-0" method="post" asp-action="Go" id="NewsletterForm">
                         <div class="col-sm-12 col-md-8">
-                            <label for="staticEmail2" class="visually-hidden">Email</label>
-                            <input type="text" readonly class="form-control" id="staticEmail2" value="email@example.com">
+                            <label for="staticEmail2" class="visually-hidden">Courriel</label>
+                            <input type="text" class="form-control" id="staticEmail2" value="email@example.com" onkeyup="ValidateEmailAddress(null);">
                         </div>
                         <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary green-btn text-uppercase black-text fw-semibold">Sign me up</button>
+                            <button type="submit" class="btn btn-primary green-btn text-uppercase black-text fw-semibold" onclick="SaveEmail(); return false;">Je m'inscris</button>
                         </div>
                     </form>
                 </div>
@@ -765,5 +765,93 @@
     <!--bootstrap-->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
+    <script type="text/javascript">
+
+        function SaveEmail() {
+
+            let htmlInputEl = document.getElementById("staticEmail2");
+            let userEmail = htmlInputEl.value;
+            if (htmlInputEl) {
+
+                if (ValidateEmailAddress(userEmail)) {
+
+                    $.ajax({
+                        async: false,
+                        url: "/Home/Index?SignupEmailAddress=" + userEmail,
+                        type: "POST",
+                        dataType: "json",
+                        contentType: 'application/json',
+                        success: function (result) {
+
+                            const ServerRespObj = JSON.parse(result);
+
+                            console.log(result.toString());
+                            console.log(ServerRespObj);
+                            if (ServerRespObj.Status == 'true') {
+                                //console.log('It should show the success messages');
+                                if (window.location.href.indexOf('french') > 0){
+                                    $('#titleForm').text('Merci pour votre intérêt!');
+                                    $('#messageForm').text('Vérifiez votre boîte de courrier indésirable et ajoutez-nous à vos contacts pour ne rien manquer!');
+                                } else {
+                                    $('#titleForm').text('Thanks for signing up!');
+                                    $('#messageForm').text('Check your spam box and put us in your contacts to make sure you don’t miss anything!');
+                                }
+                                $('#NewsletterForm').addClass('d-none');
+                            }
+                        },
+                        error: function (err) {
+
+                            console.log("Error loading payment methods:" + err);
+                        }
+                    });
+
+                    //Need to add function to check if the email address exist. once that's in the place
+                    //we have to just change the html text same code like above
+
+                    //below will be the logic to call third party api where we will send the email address
+                    //in the above ajax call I am sending email via url, most likely we will be sending a json object to 3rd party api. We will need to
+                    //follow 3rd party api format for json object and send the request
+                    //There is still a possibility to add more error handling and response for the user to let them know what has happened.
+
+                    //$.ajax({
+                    //   async: false,
+                    //   url: "/Home/Index?SignupEmailAddress=" + userEmail,
+                    //   type: "POST",
+                    //   dataType: "json",
+                    //   contentType: 'application/json',
+                    //   success: function (result) {
+
+                    //      const ServerRespObj = JSON.parse(result);
+
+                    //      console.log(result.toString());
+                    //   },
+                    //   error: function (err) {
+
+                    //      console.log("Error loading payment methods:" + err);
+                    //   }
+                    //});
+                }
+            }
+
+        }
+
+
+        function ValidateEmailAddress(emailAddress) {
+            let htmlInputEl = document.getElementById("staticEmail2");
+            let userEmail = (emailAddress === null || emailAddress === "") ? htmlInputEl.value : emailAddress;
+
+            if (htmlInputEl && userEmail && userEmail !== "" && (/^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userEmail))) {
+                htmlInputEl.style.backgroundColor = "";
+                htmlInputEl.title = "";
+                return true;
+
+            } else {
+                htmlInputEl.style.backgroundColor = "yellow";
+                htmlInputEl.title = "Seems like you have entered an ill-formatted email address. Please review and correct. Thanks";
+            }
+            return false;
+        }
+    </script>
+
 </body>
 </html>
