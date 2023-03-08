@@ -1,0 +1,486 @@
+/*Fonts*/
+@font-face {
+    font-family: "Aktiv-Grostek";
+    src: url("../fonts/aktiv_grotesk-webfont.woff") format("woff"), url("../fonts/aktiv_grotesk-webfont.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aktiv-Grostek";
+    src: url("../fonts/aktiv_grotesk_italic-webfont.woff") format("woff"), url("../fonts/aktiv_grotesk_italic-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Aktiv-Grostek";
+    src: url("../fonts/aktiv_grotesk_bold-webfont.woff") format("woff"), url("../fonts/aktiv_grotesk_bold-webfont.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/PublicoHeadline-Medium.woff") format("woff"), url("../fonts/PublicoHeadline-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/PublicoHeadline-BoldItalic.woff") format("woff"), url("../fonts/PublicoHeadline-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/PublicoHeadline-Light.woff2") format("woff2"), url("../fonts/PublicoHeadline-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    font-weight: 300;
+    font-style: italic;
+    src: url("../fonts/PublicoHeadline-LightItalic.woff2") format("woff2"), url("../fonts/PublicoHeadline-LightItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/PublicoHeadline-Bold.woff2") format("woff2"), url("../fonts/PublicoHeadline-Bold.woff") format("woff");
+}
+/*Basic components/fonts/button  styling*/
+body {
+    color: #ffffff;
+}
+
+p,
+ul,
+li,
+a,
+span,
+table,
+label,
+.para-font {
+    font-family: "Aktiv-Grostek", arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-font {
+    font-family: "Publico Headline", sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 5vh;
+}
+
+h2,
+.h2 {
+    font-size: 4.3vh;
+}
+
+.h3,
+h3 {
+    font-size: 3.44vh;
+}
+
+.h4,
+h4 {
+    font-size: 2.6vh;
+}
+
+h5,
+.h5 {
+    font-size: 2.15vh;
+}
+
+h6,
+.h6 {
+    font-size: 1.98vh;
+}
+
+.footnote-fontsize {
+    font-size: 0.35rem;
+}
+
+p, a, span {
+    font-size: 1.7vh;
+}
+
+.major-headline {
+    font-size: 5.5vh;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.lightgreen-text {
+    color: #a0dab3;
+}
+
+.cross-text {
+    color: #F88080;
+}
+
+.peach-text {
+    color: #ffb990;
+}
+
+.orange-text {
+    color: #ff7e33;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.navy-text {
+    color: #202A44;
+}
+
+.lightblue-text {
+    color: #9FAee5;
+}
+
+.btn {
+    color: #000000;
+    border-radius: 0%;
+    font-size: 1.7vh;
+}
+
+.orange-btn {
+    background-color: #ffb990;
+    border-color: #ffb990;
+}
+
+    .orange-btn:hover {
+        background-color: #ff7e33;
+        transition: all 0.3s ease-in;
+        border-color: #ff7e33;
+    }
+
+.green-btn {
+    background-color: #a0dab3;
+    border-color: #a0dab3;
+}
+
+    .green-btn:hover {
+        background-color: #5dc07e;
+        border-color: #5dc07e;
+        transition: all 0.3s ease-in;
+    }
+
+.navy-background {
+    background-color: #202A44;
+}
+
+.lightgreen-background {
+    background-color: #a0dab3;
+}
+
+.lightblue-background {
+    background-color: #9FAee5;
+}
+
+.lightblue-angled-background {
+    background-color: #9FAee5;
+}
+
+.peach-background {
+    background-color: #ffb990;
+}
+
+.navy-round-background {
+    background-color: #202A44;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.navy-angled-background {
+    background-color: #202A44;
+}
+
+.navy-rightAngled-background {
+    background-color: #202A44;
+}
+
+.lightgreen-angled-background {
+    background-color: #a0dab3;
+}
+
+@media screen and (min-width: 768px) {
+    .navy-angled-background {
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navy-rightAngled-background {
+        clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+    }
+
+    .lightblue-angled-background {
+        clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .lightgreen-angled-background {
+        clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+    }
+}
+
+.newsletter-blue-background {
+    background-image: url("../images/blue-background.png");
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .w-md-50 {
+        width: 100%;
+    }
+
+    .footer-border {
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .w-md-50 {
+        width: 50%;
+    }
+
+    .footer-border {
+        border-right: 1px solid white;
+    }
+}
+
+.margin-bottom-4 {
+    margin-bottom: 4em;
+}
+
+.margin-top-5 {
+    margin-top: 5em;
+}
+
+.margin-top-6 {
+    margin-top: 6em;
+}
+
+.green-border {
+    border: #5dc07e solid 2px;
+}
+
+.lightblue-border {
+    border: #9FAee5 solid 2px;
+}
+
+.lightblue-round-border {
+    border: #9FAee5 dashed 3px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: block;
+    text-align: center;
+    padding: 7px 10px 10px 10px;
+    line-height: 1;
+}
+
+/*Header styling*/
+/*2nd div participate section*/
+.participate-section {
+    background-color: grey;
+    background-image: linear-gradient(0deg, rgba(32, 42, 68, 0.6), rgba(32, 42, 68, 0.6)), url("../images/contest-promo-png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    width: 100%;
+}
+
+/**/
+#showFurnitureSection, #showApplianceSection {
+    cursor: pointer;
+}
+
+.smartOne-furn-background {
+    background-image: url("../images/smartOne-FURN.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 600px;
+}
+
+.fa-circle-info:hover {
+    color: #ff7e33;
+    transition: all 0.3s ease-in;
+    border-color: #ff7e33;
+}
+
+.smartOne-app-background {
+    background-image: url("../images/smartOne-APP.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 600px;
+}
+
+a.peach-text:hover {
+    color: #ff7e33;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 577px) {
+    .smartOne-furn-background, .smartOne-app-background {
+        background: white;
+        background-image: none;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 578px) and (max-width: 1366px) {
+    .smartOne-furn-background {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/smartOne-FURN.jpg");
+        height: 300px;
+    }
+
+    .smartOne-app-background {
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/smartOne-APP.jpg");
+        height: 300px;
+    }
+}
+
+.furniture-main-image {
+    position: relative;
+    z-index: -1;
+}
+
+.smartOne-Furn-logo, .smartOne-App-logo {
+    position: relative;
+    z-index: 10;
+    width: 75%;
+}
+
+@media screen and (max-width: 577px) {
+    .smartOne-Furn-logo, .smartOne-App-logo {
+        width: 100%;
+    }
+
+    .smartOne-Furn-logo {
+        right: 0%;
+    }
+}
+
+@media screen and (min-width: 578px) {
+    .smartOne-Furn-logo {
+        right: -25%;
+    }
+}
+
+#SmartOne-furniture-section, #SmartOne-appliance-section {
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/*Section styling*/
+/*6th Section*/
+#activate-now-button {
+    position: absolute;
+    right: 10%;
+    padding: 45px 0px 0px 0px;
+    transition: scale 0.6s ease-in-out;
+}
+
+    #activate-now-button:hover {
+        scale: 1.15;
+    }
+
+@media screen and (max-width: 768px) {
+    #activate-now-button {
+        right: 2%;
+    }
+}
+/*Accordion FAQ style*/
+#FAQAccordion .accordion-item {
+    border-bottom: 0px;
+}
+
+#FAQAccordion .accordion-header {
+    background-color: #f5f5f5;
+}
+
+#FAQAccordion .accordion-button {
+    background-color: #f5f5f5;
+    padding: 1rem 3rem;
+}
+
+    #FAQAccordion .accordion-button:not(.collapsed), #FAQAccordion .accordion-button:focus {
+        color: #ff7e33;
+        box-shadow: none;
+    }
+
+#FAQAccordion .accordion-body {
+    padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    #FAQAccordion .accordion-button {
+        padding: 1rem;
+    }
+
+    #FAQAccordion .accordion-body {
+        padding: 1rem;
+    }
+}
+
+.fa-brands {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+    .fa-brands:hover {
+        background-color: white;
+        color: #202A44;
+        padding: 5px;
+    }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,497 @@
+//Variables
+//Color variables
+$navyblue: #202A44;
+$indigo: #485cc7;
+$lightblue: #9FAee5;
+$lightgreen: #a0dab3;
+$darkblue: #5f78d3;
+$darkgreen: #5dc07e;
+$peach: #ffb990;
+$orange: #ff7e33;
+$white: #ffffff;
+$black: #000000;
+
+$para-fonts: "Aktiv-Grostek", arial, sans-serif;
+$heading-fonts: "Publico Headline", sans-serif;
+
+/*Fonts*/
+@font-face {
+    font-family: 'Aktiv-Grostek';
+    src: url('../fonts/aktiv_grotesk-webfont.woff') format('woff'), url('../fonts/aktiv_grotesk-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktiv-Grostek';
+    src: url('../fonts/aktiv_grotesk_italic-webfont.woff') format('woff'), url('../fonts/aktiv_grotesk_italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktiv-Grostek';
+    src: url('../fonts/aktiv_grotesk_bold-webfont.woff') format('woff'), url('../fonts/aktiv_grotesk_bold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Publico Headline';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/PublicoHeadline-Medium.woff') format('woff'), url('../fonts/PublicoHeadline-Medium.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Publico Headline';
+    font-weight: bold;
+    font-style: italic;
+    src: url('../fonts/PublicoHeadline-BoldItalic.woff') format('woff'), url('../fonts/PublicoHeadline-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Publico Headline';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/PublicoHeadline-Light.woff2') format('woff2'), url('../fonts/PublicoHeadline-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Publico Headline';
+    font-weight: 300;
+    font-style: italic;
+    src: url('../fonts/PublicoHeadline-LightItalic.woff2') format('woff2'), url('../fonts/PublicoHeadline-LightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Publico Headline';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../fonts/PublicoHeadline-Bold.woff2') format('woff2'), url('../fonts/PublicoHeadline-Bold.woff') format('woff');
+}
+
+/*Basic components/fonts/button  styling*/
+
+body {
+    color: $white;
+}
+
+//Fonts & Font size
+
+p,
+ul,
+li,
+a,
+span,
+table,
+label,
+.para-font {
+    font-family: $para-fonts;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-font {
+    font-family: $heading-fonts;
+}
+
+h1,
+.h1 {
+    // font-size: 3.9vw; //75px in figma design
+    font-size: 2.9rem; //font guideline from zucoradev site
+}
+
+h2,
+.h2 {
+    font-size: 2.5rem; //zucoradev
+}
+
+.h3,
+h3 {
+    font-size: 2rem;
+}
+
+.h4,
+h4 {
+    font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.15rem;
+}
+
+.footnote-fontsize {
+    font-size: 0.35rem;
+}
+
+.major-headline {
+    //font-size:6.25vw; //120px in figma design
+    font-size: 4.5rem; //from zucoradev
+}
+
+@media screen and (max-width:768px){
+    .major-headline{
+        font-size: 5.5vh;
+    }
+}
+
+//Text color
+
+.white-text {
+    color: $white;
+}
+
+.lightgreen-text {
+    color: $lightgreen;
+}
+
+.cross-text{
+    color: #F88080;
+}
+
+.peach-text {
+    color: $peach;
+}
+
+.orange-text{
+    color:$orange;
+}
+
+.black-text{
+    color:$black;
+}
+
+.navy-text{
+    color: $navyblue;
+}
+
+.lightblue-text{
+    color:$lightblue;
+}
+
+//Buttons custom classes
+
+.btn {
+    color: $black;
+    border-radius: 0%;
+}
+
+.orange-btn {
+    background-color: $peach;
+    border-color: $peach;
+
+    &:hover {
+        background-color: $orange;
+        transition: all 0.3s ease-in;
+        border-color: $orange;
+    }
+}
+
+.green-btn {
+    background-color: $lightgreen;
+    border-color: $lightgreen;
+
+    &:hover {
+        background-color: $darkgreen;
+        border-color: $darkgreen;
+        transition: all 0.3s ease-in;
+    }
+}
+
+//Backgrounds
+
+.navy-background {
+    background-color: $navyblue;
+}
+
+.lightgreen-background {
+    background-color: $lightgreen;
+}
+
+.lightblue-background {
+    background-color: $lightblue;
+}
+
+.lightblue-angled-background{
+    background-color: $lightblue;
+    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.peach-background{
+    background-color: $peach;
+}
+
+.navy-round-background{
+    background-color: $navyblue;
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+.navy-angled-background{
+    background-color: $navyblue;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+ }
+ 
+ .navy-rightAngled-background{
+    background-color: $navyblue;
+    clip-path: polygon(0 0,88% 0, 100% 100%, 0 100%);
+ }
+
+.lightgreen-angled-background{
+    background-color: $lightgreen;
+    clip-path:polygon(0 0,95% 0, 100% 100%, 0 100%);
+}
+
+.newsletter-blue-background{
+    background-image: url('../images/blue-background.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: contain;
+    width:100%;
+    height: auto;
+}
+
+//Custom Form style
+
+.form-control{
+    border-radius: 0%;
+}
+
+//Custom width class
+
+
+@media screen and (max-width:768px){
+    .w-md-50{
+        width:100%;
+    }
+
+    .footer-border{
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (min-width:769px){
+    .w-md-50{
+        width:50%;
+    }
+
+    .footer-border{
+        border-right: 1px solid white;
+    }
+}
+
+//custom margin class
+
+.margin-bottom-4{
+    margin-bottom:4em;
+}
+
+.margin-top-6{
+    margin-top:6em;
+}
+
+//Borders
+
+.green-border{
+    border: $darkgreen solid 2px;
+}
+
+.lightblue-border{
+    border:$lightblue solid 2px;
+}
+
+.lightblue-round-border{
+    border:$lightblue dashed 3px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: block;
+    text-align: center;
+    padding: 7px 10px 10px 10px;
+    line-height: 1;
+}
+
+//custom list style
+
+
+/*Header styling*/
+
+#changeWord{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+}
+
+/*2nd div participate section*/
+
+.participate-section {
+    background-color: grey;
+    background-image: linear-gradient(0deg, rgba(32, 42, 68, 0.6), rgba(32, 42, 68, 0.6)), url('../images/contest-promo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    width: 100%;
+
+}
+
+/**/
+
+#showFurnitureSection, #showApplianceSection{
+    cursor: pointer;
+}
+
+.smartOne-furn-background{
+    background-image:url('../images/smartOne-FURN.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height:600px;
+}
+
+.fa-circle-info{
+    &:hover{
+        color: $orange;
+        transition: all 0.3s ease-in;
+        border-color: $orange;
+    }
+}
+.smartOne-app-background{
+    background-image: url('../images/smartOne-APP.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height:600px;
+}
+
+a.peach-text{
+    &:hover{
+        color:$orange;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width:800px){
+    .smartOne-furn-background{
+        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/smartOne-FURN.png');
+        height: 400px;
+    }
+
+    .smartOne-app-background{
+        background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/smartOne-APP.png');
+        height: 400px;
+    }
+}
+
+
+.furniture-main-image{
+    position: relative;
+    z-index: -1;
+}
+
+.smartOne-Furn-logo, .smartOne-App-logo{
+    position: relative;
+    z-index: 10;
+    width:75%;   
+}
+
+.smartOne-Furn-logo{
+    right:-25%;
+}
+
+#SmartOne-furniture-section, #SmartOne-appliance-section{
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+/*Section styling*/
+
+/*6th Section*/
+
+#activate-now-button{
+    position: absolute;
+    right:10%;
+    padding: 45px 0px 0px 0px;
+    transition: scale 0.6s ease-in-out;
+
+    &:hover{
+        scale: 1.15;
+    }
+}
+
+
+/*Accordion FAQ style*/
+
+#FAQAccordion{
+
+    .accordion-item{
+        border-bottom: 0px;
+    }
+
+    .accordion-header{
+        background-color:#f5f5f5;
+    }
+
+    .accordion-button{
+        background-color: #f5f5f5;
+        padding: 1rem 3rem;
+    }
+
+    .accordion-button:not(.collapsed), .accordion-button:focus{
+        color:$orange;
+        //border-color: $lightgreen;
+        box-shadow: none;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    #FAQAccordion{
+        .accordion-button{
+            padding:1rem;
+        }
+    }
+}
+
+.fa-brands{
+    transition: scale 0.5s ease-in-out;
+    -webkit-transition: scale 0.5s ease-in-out;
+    &:hover{
+        background-color: white;
+        color:$navyblue;
+        scale:1.15;
+        padding: 5px;
+    }
+}
+
+
+
+
