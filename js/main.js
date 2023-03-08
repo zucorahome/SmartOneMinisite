@@ -40,7 +40,7 @@
     }
         if(window.location.href.indexOf('french') > 0){
             if(this.innerHTML == 'Ouvrir tout'){
-                this.innerHTML = 'Réduire tout';
+                this.innerHTML = 'R&eacute;duire tout';
             }else{
                 this.innerHTML = 'Ouvrir tout';
             }
@@ -52,9 +52,5 @@
             }
         }
    },false);
-
-   
-const windowScreesize = window.innerWidth;
-
 
 })();
