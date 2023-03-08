@@ -429,7 +429,7 @@
                 </div>
                 <div>
                     <h5 class="para-font text-uppercase black-text mb-0 fw-semibold">Enjoy Solutions</h5>
-                    <p class="black-text"><span class="fw-semibold">You may receive a visit from a qualified technician or in some cases we'll send a professional cleaning kit. <br />These are covered by your SmartOne Plan!</p>
+                    <p class="black-text">You may receive a visit from a qualified technician or in some cases we'll send a professional cleaning kit. <br />These are covered by your SmartOne Plan!</p>
                 </div>
             </div>
         </div>
@@ -722,6 +722,8 @@
                error: function (err) {
 
                   console.log("Error loading payment methods:" + err);
+                        $('#titleForm').text('Sorry It seems something went wrong');
+                        $('#messageForm').text('Please try again or with different email address.');
                }
             });
             
