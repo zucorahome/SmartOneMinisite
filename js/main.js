@@ -38,10 +38,18 @@
     for(const x of AllFAQAccordions){
         x.classList.toggle('show');
     }
-        if(this.innerHTML == 'Expand all'){
-            this.innerHTML = 'Collapse all';
+        if(window.location.href.indexOf('french') > 0){
+            if(this.innerHTML == 'Ouvrir tout'){
+                this.innerHTML = 'Réduire tout';
+            }else{
+                this.innerHTML = 'Ouvrir tout';
+            }
         }else{
-            this.innerHTML = 'Expand all';
+            if(this.innerHTML == 'Expand all'){
+                this.innerHTML = 'Collapse all';
+            }else{
+                this.innerHTML = 'Expand all';
+            }
         }
    },false);
 
