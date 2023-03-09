@@ -7,7 +7,13 @@
 
      //changing text function
         const target = document.querySelector('#changeWord');
-        const wordArray = ['sofa?','fridge?','oven?'];
+        let wordArray = [];
+        if(window.location.href.indexOf('french') > 0){
+            wordArray = ['sofa?','Four?','Frigo?'];
+        }else{
+            wordArray = ['sofa?','fridge?','oven?'];
+        }
+        
        //for french SOFA/FOUR/FRIGO
        
         (function displayWord(i) {

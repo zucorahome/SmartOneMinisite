@@ -104,38 +104,38 @@ h6,
 h1,
 .h1 {
     // font-size: 3.9vw; //75px in figma design
-    //font-size: 2.9rem; //font guideline from zucoradev site
-    font-size:5vh;
+    font-size: 2.9rem; //font guideline from zucoradev site
+    //font-size:5vh;
 }
 
 h2,
 .h2 {
-    //font-size: 2.5rem; //zucoradev
-    font-size: 4.30vh;
+    font-size: 2.5rem; //zucoradev
+    //font-size: 4.30vh;
 }
 
 .h3,
 h3 {
-    //font-size: 2rem;
-    font-size:3.44vh;
+    font-size: 2rem;
+    //font-size:3.44vh;
 }
 
 .h4,
 h4 {
-    //font-size: 1.5rem;
-    font-size: 2.6vh;;
+    font-size: 1.5rem;
+    //font-size: 2.6vh;;
 }
 
 h5,
 .h5 {
-    //font-size: 1.25rem;
-    font-size: 2.15vh;
+    font-size: 1.25rem;
+    //font-size: 2.15vh;
 }
 
 h6,
 .h6 {
-    //font-size: 1.15rem;
-    font-size:1.98vh;
+    font-size: 1.15rem;
+    //font-size:1.98vh;
 }
 
 .footnote-fontsize {
@@ -143,9 +143,9 @@ h6,
 }
 
 p,a,span, ol, li, ul{
-    //font-size:1rem;
+    font-size:1rem;
     //font-size:1.7vh;
-    font-size:2vh;
+    //font-size:2vh;
 }
 .major-headline {
     //font-size:6.25vw; //120px in figma design
@@ -520,6 +520,7 @@ a.peach-text{
 
     .accordion-body{
         padding: 1rem 3rem;
+        font-size:2vh;
     }
 
 }
