@@ -142,9 +142,10 @@ h6,
     font-size: 0.35rem;
 }
 
-p,a,span{
+p,a,span, ol, li, ul{
     //font-size:1rem;
-    font-size:1.7vh;
+    //font-size:1.7vh;
+    font-size:2vh;
 }
 .major-headline {
     //font-size:6.25vw; //120px in figma design
@@ -337,6 +338,10 @@ p,a,span{
 
 .lightblue-border{
     border:$lightblue solid 2px;
+}
+
+.lightblue-bottom-border{
+    border-bottom: $lightblue solid 3px;
 }
 
 .lightblue-round-border{

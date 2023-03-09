@@ -53,4 +53,12 @@
         }
    },false);
 
+   //add spinner when submit button clicked
+   // create an api to send the data - for now just any but later a secure one our zucorahomeone
+   //send data our api and one goes to symplify
+   //Check if email is valid && if email already exist in the record or not. 
+   //show suucess/error/duplicate email message. 
+
+
+
 })();

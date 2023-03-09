@@ -107,8 +107,8 @@ h6,
   font-size: 0.35rem;
 }
 
-p, a, span {
-  font-size: 1.7vh;
+p, a, span, ol, li, ul {
+  font-size: 2vh;
 }
 
 .major-headline {
@@ -277,6 +277,10 @@ p, a, span {
 
 .lightblue-border {
   border: #9FAee5 solid 2px;
+}
+
+.lightblue-bottom-border {
+  border-bottom: #9FAee5 solid 3px;
 }
 
 .lightblue-round-border {
